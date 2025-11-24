@@ -14,3 +14,5 @@ app.get("/", (req, res) => {
 });
 
 app.listen(5000, () => console.log("Server live on port 5000"));
+const whatsappRoutes = require("./routes/whatsappRoutes");
+app.use("/api/whatsapp", whatsappRoutes);
