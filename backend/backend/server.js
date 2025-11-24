@@ -2,6 +2,7 @@ import express from "express";
 import axios from "axios";
 import cors from "cors";
 import dotenv from "dotenv";
+const whatsappRoutes = require('./routes/whatsappRoutes');
 
 dotenv.config();
 const app = express();
