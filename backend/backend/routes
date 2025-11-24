@@ -1,1 +1,16 @@
+const express = require('express');
+const router = express.Router();
+
+// WhatsApp message route
+router.post('/send', (req, res) => {
+    const { number, message } = req.body;
+
+    // Sirf test ke liye console me print karenge
+    console.log('Number:', number);
+    console.log('Message:', message);
+
+    res.json({ success: true, msg: 'Message route hit!' });
+});
+
+module.exports = router;
 
